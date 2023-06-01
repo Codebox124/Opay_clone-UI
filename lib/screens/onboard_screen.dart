@@ -16,12 +16,10 @@ class _OnboardScreenState extends State<OnboardScreen> {
         height: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                const Color.fromARGB(255, 209, 196, 81),
-                Color.fromARGB(255, 156, 167, 0)
-
-              ],
-
+          colors: [
+            const Color.fromARGB(255, 209, 196, 81),
+            Color.fromARGB(255, 156, 167, 0)
+          ],
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
         )),
