@@ -26,7 +26,14 @@ class _LoginPageState extends State<LoginPage> {
               )
             ],
           ),
-          Image.asset('asset/imgs/logo')
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Image.asset('assets/imgs/logo.png', width: 100),
+          ),
+          TextFormField(
+          
+            ),
+          
         ]),
       ),
     );

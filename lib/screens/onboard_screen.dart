@@ -28,15 +28,18 @@ class _OnboardScreenState extends State<OnboardScreen> {
         ),
       ),
       body: Center(
-        child: Column(
-          children: [
-            Image.asset("asset/imgs/logo.png"),
-            Text(
-              "OPAY",
-              style: TextStyle(
-                  color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(top: 40),
+          child: Column(
+            children: [
+              Image.asset("assets/imgs/logo.png"),
+              Text(
+                "OPAY",
+                style: TextStyle(
+                    color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
         ),
       ),
     );
