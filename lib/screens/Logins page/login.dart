@@ -30,9 +30,20 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.all(20),
             child: Image.asset('assets/imgs/logo.png', width: 100),
           ),
-          TextFormField(
-          
-            ),
+          Column(
+            children: [
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color.fromARGB(255, 231, 238, 252),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(2)
+                  ),
+                ),
+              ),
+            ],
+          )
           
         ]),
       ),
