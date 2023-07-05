@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nexuz/screens/Logins%20page/login.dart';
 
 class OnboardScreen extends StatefulWidget {
   const OnboardScreen({super.key});
@@ -11,18 +12,32 @@ class _OnboardScreenState extends State<OnboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-          colors: [
-            const Color.fromARGB(255, 209, 196, 81),
-            Color.fromARGB(255, 156, 167, 0)
+      backgroundColor: Color.fromARGB(255, 97, 223, 101),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(30),
+        child: FloatingActionButton.extended(
+          backgroundColor: Colors.white,
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => LoginPage()));
+          },
+          label: Text(
+            "Get Started",
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Image.asset("asset/imgs/logo.png"),
+            Text(
+              "OPAY",
+              style: TextStyle(
+                  color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
+            ),
           ],
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-        )),
+        ),
       ),
     );
   }
