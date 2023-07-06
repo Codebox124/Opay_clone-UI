@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nexuz/screens/Logins%20page/Login_Widget/action_bar.dart';
+import 'package:nexuz/screens/Logins%20page/Login_Widget/input.dart';
+import 'package:nexuz/screens/Logins%20page/Login_Widget/login_btn.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -10,42 +13,25 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10),
-      child: SingleChildScrollView(
-        child: Column(children: [
-          Row(
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
             children: [
-              Icon(Icons.arrow_back_ios, size: 20),
-              Text(
-                "Sign In",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
-              )
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Image.asset('assets/imgs/logo.png', width: 100),
-          ),
-          Column(
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: const Color.fromARGB(255, 231, 238, 252),
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide.none,
-                    borderRadius: BorderRadius.circular(2)
-                  ),
-                ),
+              ActionBar(),
+              SizedBox(
+                height: 40,
               ),
+              InputField(),
+              SizedBox(
+                height: 40,
+              ),
+              LoginButton()
+
             ],
-          )
-          
-        ]),
+          ),
+        ),
       ),
     );
   }
