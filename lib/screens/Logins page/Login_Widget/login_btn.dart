@@ -13,10 +13,16 @@ class _LoginButtonState extends State<LoginButton> {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Color.fromARGB(255, 74, 182, 78),
+        color: Color.fromARGB(131, 81, 252, 86),
       ),
       height: 40,
-      child: Center(child: Text("Sign In")),
+      child: Center(
+          child: Text(
+        "Sign In",
+        style: TextStyle(
+          color: Colors.white,
+        ),
+      )),
     );
   }
 }
