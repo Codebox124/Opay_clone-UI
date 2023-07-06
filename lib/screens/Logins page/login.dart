@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nexuz/screens/Logins%20page/Login_Widget/action_bar.dart';
 import 'package:nexuz/screens/Logins%20page/Login_Widget/input.dart';
 import 'package:nexuz/screens/Logins%20page/Login_Widget/login_btn.dart';
+import 'package:nexuz/screens/Logins%20page/Login_Widget/signup_btn.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -27,7 +28,11 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 40,
               ),
-              LoginButton()
+              LoginButton(),
+              SizedBox(
+                height: 20,
+              ),
+              SignupBtn()
 
             ],
           ),

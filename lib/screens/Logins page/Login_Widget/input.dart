@@ -13,6 +13,10 @@ class _InputFieldState extends State<InputField> {
     return Container(
       child: Column(
         children: [
+          Image.asset("assets/imgs/logo.png", width: 100),
+          SizedBox(
+            height: 20,
+          ),
           TextFormField(
             validator: (String? value) {
               if (value == null || value.isEmpty) {
