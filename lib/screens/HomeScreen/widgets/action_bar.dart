@@ -17,8 +17,8 @@ class _ActionBarState extends State<ActionBar> {
           Row(
             children: [
               CircleAvatar(
-                backgroundColor: Colors.black,
-                child: Text("Dr"),
+                backgroundColor: Colors.white,
+                child: Image.asset("assets/imgs/logo.png"),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 10),

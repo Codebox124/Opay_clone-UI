@@ -18,11 +18,7 @@ class _InputFieldState extends State<InputField> {
             height: 20,
           ),
           TextFormField(
-            validator: (String? value) {
-              if (value == null || value.isEmpty) {
-                return ('please Enter Somthing !');
-              }
-            },
+          
             keyboardType: TextInputType.number,
             decoration: const InputDecoration(
               prefixIcon: Icon(Icons.phone),
@@ -36,11 +32,7 @@ class _InputFieldState extends State<InputField> {
             height: 20,
           ),
           TextFormField(
-            validator: (String? value) {
-              if (value == null || value.isEmpty) {
-                return ('please Enter Somthing !');
-              }
-            },
+           
             obscuringCharacter: "*",
             obscureText: true,
             decoration: const InputDecoration(
