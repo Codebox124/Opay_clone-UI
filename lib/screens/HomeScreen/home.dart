@@ -17,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             ActionBar(),
+            SizedBox(height: 20,),
             SingleChildScrollView(
               child: Column(
                 children: [
