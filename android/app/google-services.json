@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "898317304939",
+    "project_id": "opay-clone",
+    "storage_bucket": "opay-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898317304939:android:7d1c0b090b856939165d2e",
+        "android_client_info": {
+          "package_name": "com.example.nexuz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898317304939-ao3trrvbnhsfjl503dmfuckn8grobqu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTyfpCedOIcpf8bsxpO-u9pFh_PBVo4kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898317304939-ao3trrvbnhsfjl503dmfuckn8grobqu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
