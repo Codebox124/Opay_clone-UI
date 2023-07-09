@@ -14,10 +14,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    int currentIndex = 0;
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 248, 244, 244),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -47,9 +48,11 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.white,
         onDestinationSelected: (int index) {
-          print('Selected $index');
+          setState(() {
+            currentIndex = index;
+          });
         },
-        selectedIndex: 0,
+        selectedIndex: currentIndex,
         destinations: const <NavigationDestination>[
           NavigationDestination(
             selectedIcon: Icon(Icons.home_filled),
